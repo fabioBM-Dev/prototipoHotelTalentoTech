@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>Under Sea Resort &reg;</h1>
+        <nav>
+            <ul>
+                <li><a href= "../../index.html" style="color: antiquewhite;">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--<header>
+        Sistema de Empleados
+         <a href = "../../../index.html" style="color: antiquewhite;"><strong>Home</strong></a>
+    </header>-->
+
+    <!-- Layout principal -->
+    <div class="main-container">
+
+        <!-- Formulario -->
+        <form id="formulario">
+            <h2>Nuevo Artículo</h2>
+            <input type="text" name="codigoarticulo" placeholder="Id Art">
+            <input type="text" name="articulo" placeholder="Nombre del artículo">
+            <input type="text" name="categoria" placeholder="Categoría">
+            <input type="number" name="existencias" placeholder="Cantidad">
+            <input type="number" name="precio" placeholder="Valor unitario">
+            <button type="submit">Guardar</button>
+        </form>
+
+        <!-- Tabla -->
+        <div class="table-container">
+            <table id="tabla-contactos">
+                <thead>
+                    <tr>
+                        <th>ID Art.</th>
+                        <th>Artículo</th>
+                        <th>Categoría</th>
+                        <th>Existencias</th>
+                        <th>Valor unitario</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí el JS insertará filas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+/* ===========================
+   ESTILOS GENERALES
+   =========================== */
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f7faff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background: url('../../images/background_playa_refresco_left.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
+    overflow-x: hidden; /* Previene el desplazamiento horizontal. */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+header {
+    /*position: fixed; /* Hace que el encabezado permanezca visible al hacer scroll. */
+    top: 50; /* Lo posiciona en la parte superior de la página. */
+    width: 100%; /* Abarca todo el ancho de la ventana. */
+    background-color: #1569aebc; /* Fondo semitransparente para contraste. */
+    padding: 10px 40px; /* Espaciado interno para los elementos del encabezado. */
+    display: flex; /* Utiliza diseño flexible para organizar los elementos horizontalmente. */
+    justify-content: space-between; /* Distribuye los elementos en extremos opuestos. */
+    align-items: center; /* Alinea verticalmente los elementos del encabezado. */
+}
+
+/* ===========================
+   CABECERA
+   =========================== */
+/* Estilo del título en el encabezado */
+header h1 {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    display: flex;
+    flex-direction: row;
+    background-color: #1569aebc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navegación dentro del encabezado */
+header nav ul {
+    list-style: none; /* Elimina los puntos de lista predeterminados. */
+    display: flex; /* Muestra los elementos de la lista en una fila. */
+    gap: 20px; /* Espaciado entre los elementos de la lista. */
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+header nav ul li a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    color: #ffffff; /* Color de texto blanco. */
+    font-weight: bold; /* Resalta los enlaces con texto en negrita. */
+    padding: 5px 10px; /* Espaciado interno en los enlaces. */
+    border-radius: 4px; /* Bordes redondeados para los enlaces. */
+    transition: background-color 0.7s; /* Suaviza el cambio de color de fondo (opcional). */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+header nav ul li a:hover {
+    background-color: #00bfff; /* Fondo azul claro al pasar el cursor. */
+    color: #000; /* Cambia el color del texto a negro. */
+}
+
+
+/*header {
+    background-color: #1569aebc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}*/
+
+/* ===========================
+   LAYOUT PRINCIPAL
+   =========================== */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ===========================
+   FORMULARIO
+   =========================== */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    display: block;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(238, 251, 5, 0.927);
+    color: #1e3a8a;
+    border: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background-color: #0099ff;
+}
+
+/* ===========================
+   TABLA
+   =========================== */
+.table-container {
+    flex: 2;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+table th {
+    background-color:rgba(238, 251, 5, 0.927);
+    color: #1569aebc;
+}
+
+/* Filas pares alternadas */
+table tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* ===========================
+   BOTONES DE ACCIÓN EN TABLA
+   =========================== */
+td button {
+    margin: 0 3px;
+    padding: 5px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+td button:hover {
+    transform: scale(1.05);
+}
+
+.btn-edit {
+    background-color: burlywood;
+}
+.btn-edit:hover {
+    background-color: #f5d93b;
+}
+.btn-delete {
+    background-color: burlywood;
+    color: #ef4444;
+}
+.btn-delete:hover {
+    background-color: #dc2626;
+}
+
+/* ===========================
+RESPONSIVE DESIGN
+   =========================== */
+@media (max-width: 720px) {
+    
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    table {
+        border: 0;
+        min-width: unset;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 12px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        padding: 10px;
+    }
+
+    table td {
+        text-align: right;
+        padding: 8px 10px 8px 100px; /* <-- espacio a la izquierda para que el label no se superponga */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        word-break: break-word; /* <-- permite que el texto se ajuste en varias líneas */
+    }
+
+    table tr td:first-child {
+        margin-top: 5px;
+    }
+
+    table td:last-child {
+        border-bottom: none;
+    }
+
+    /* Etiquetas tipo "data-label" */
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-weight: bold;
+        color: #1e3a8a;
+        text-align: left;
+        width: 100px; /* <-- ancho fijo para alinear etiquetas */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Botones en bloque, centrados */
+    table td[data-label="Acciones"] {
+        text-align: center;
+        padding-left: 10px; /* sin espacio reservado para label */
+    }
+
+    table td[data-label="Acciones"] .action-btn {
+        display: inline-block;
+        margin: 4px 5px;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        width: auto;
+    }
+    
+}

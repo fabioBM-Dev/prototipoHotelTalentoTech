@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>Under Sea Resort &reg;</h1>
+        <nav>
+            <ul>
+                <li><a href= "../../index.html" style="color: antiquewhite;">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--<header>
+        Sistema de Empleados
+         <a href = "../../../index.html" style="color: antiquewhite;"><strong>Home</strong></a>
+    </header>-->
+
+    <!-- Layout principal -->
+    <div class="main-container">
+
+        <!-- Formulario -->
+        <form id="formulario">
+            <h2>Nuevo Empleado</h2>
+            <input type="number" name="documento" placeholder="Documento">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="telefono" placeholder="Teléfono">
+            <input type="text" name="cargo" placeholder="Cargo">
+            <input type="number" name="salario" placeholder="Salario">
+            <input type="date" name="fecha_entrada">
+            <button type="submit">Guardar</button>
+        </form>
+
+        <!-- Tabla -->
+        <div class="table-container">
+            <table id="tabla-contactos">
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Cargo</th>
+                        <th>Salario</th>
+                        <th>Fecha Ingreso</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí el JS insertará filas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

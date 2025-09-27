@@ -1,0 +1,46 @@
+/* Contenedor Flexbox */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#inicio {
+    padding: 10px 40px 10px 40px ; /* Espaciado interno para el contenido. */
+    text-align: center; /* Centra el texto. */
+    background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente para legibilidad. */
+    margin-bottom: 10px; /* Espaciado entre secciones. */
+    position: relative;
+}
+
+
+.container {
+    display: flexbox;
+    background: url('./images/hotelMAr2.jpg') no-repeat center;
+    background-size: cover;
+    height:75vh;
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+    border: 2px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    
+    
+}
+
+
+/* Elementos Flexbox */
+.item {
+    border: 2px solid whitesmoke;
+    color: whitesmoke; /* Texto blanco */
+    font-family: "Pacifico", cursive;
+    padding: 10px 10px 10px 10px; /* Espaciado interno */
+    text-align: right ; /* Centra el texto */
+    width:fit-content ; /* Tamaño mínimo de los elementos */
+    height:fit-content;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */
+   position: absolute;
+    bottom: 1.5em; ;
+    left: 50;
+    font-size: larger;
+
+
+   
+}
+

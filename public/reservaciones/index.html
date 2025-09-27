@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+     <header>
+        <h1>Under Sea Resort &reg;</h1>
+        <nav>
+            <ul>
+                <li><a href= "../../index.html" style="color: antiquewhite;">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Layout principal -->
+    <div class="main-container">
+
+        <!-- Formulario -->
+        <form id="formulario">
+            <h2>Nueva Reservación</h2>
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="text" name="telefono" placeholder="Teléfono">
+            <input type="text" name="habitacion" placeholder="Habitación">
+            <input type="date" name="fecha_entrada">
+            <input type="date" name="fecha_salida">
+            <input type="number" name="precio" placeholder="Precio">
+            <button type="submit">Guardar</button>
+        </form>
+
+        <!-- Tabla -->
+        <div class="table-container">
+            <table id="tabla-contactos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Teléfono</th>
+                        <th>Habitación</th>
+                        <th>Entrada</th>
+                        <th>Salida</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí el JS insertará filas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

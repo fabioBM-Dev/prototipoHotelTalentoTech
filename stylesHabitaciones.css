@@ -1,0 +1,60 @@
+/* Contenedor Flexbox */
+.flex-containerHab {
+
+    display: flex; /* Activa el modo Flexbox */
+    justify-content:space-around    ; /* Espacia uniformemente los elementos */
+    align-items:flex-end; /* Centra los elementos verticalmente */
+    flex-wrap:wrap ; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 5px; /* Espaciado entre los elementos */
+    padding: 80px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box;
+   
+}
+
+.containerHab {
+    
+    /*padding: 0px; /* Espaciado interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */ 
+    width: 500px;
+    height: min-content;
+    box-sizing: border-box;
+    
+       
+}
+
+
+/* Elementos Flexbox */
+.nombreHab {
+    border: 2px solid whitesmoke;
+    color: burlywood; /* Texto blanco */
+    background-color: rgba(4, 42, 74, 0.6);
+    font-size: larger;
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    min-width: none; /* Tamaño mínimo de los elementos */
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid white;
+
+}
+
+.itemHab2 {
+    color: rgb(30, 26, 252); /* Texto blanco */
+    padding: 0px; /* Espaciado interno */
+    text-align: right; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    /*width: auto;*/
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */
+    border: 2px solid white;
+    /*background-size:auto ;*/
+}
+
+.itemHab img{
+    border: 7px solid #D9A273; /* Añade un borde  alrededor de las imágenes. */
+    border-radius: 10px; /* Bordes redondeados para las imágenes. */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar las imágenes. */
+}
