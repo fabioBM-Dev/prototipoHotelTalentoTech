@@ -12,7 +12,7 @@
 
 .container {
     display: flexbox;
-    background: url('./images/hotelMAr2.jpg') no-repeat center;
+    background: url('./Images/hotelMAr2.jpg') no-repeat center;
     background-size: cover;
     height:75vh;
     padding: 20px; /* Espaciado interno del contenedor */
@@ -43,4 +43,5 @@
 
    
 }
+
 
