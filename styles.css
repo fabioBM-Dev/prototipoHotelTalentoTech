@@ -13,7 +13,7 @@ body {
     font-family: Arial, sans-serif; /* Define la fuente principal del sitio. */
     color: #ffffff; /* Establece el color del texto en blanco. */
     line-height: 1.6; /* Mejora la legibilidad al establecer la altura de línea. */
-    background: url('images/background.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background: url('./images/background.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
     overflow-x: hidden; /* Previene el desplazamiento horizontal. */
 }
@@ -188,4 +188,5 @@ footer {
     footer {
         font-size: 0.8em; /* Reduce el tamaño del texto en el pie de página para pantallas pequeñas. */
     }
+
 }
