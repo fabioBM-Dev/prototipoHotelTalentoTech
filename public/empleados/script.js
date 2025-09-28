@@ -2,7 +2,7 @@
 // Configuración base
 // ============================
 
-const API_URL = "http://localhost:80/api/empleados";
+const API_URL = ""https://3.16.215.161:4032/api/empleados";
 
 // ============================
 // Validación de formulario
@@ -233,3 +233,4 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarEmpleados();
 
 });
+
