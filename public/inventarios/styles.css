@@ -46,6 +46,12 @@ header h1 {
     font-weight: bold;
 }
 
+header h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-weight:600;
+}
+
 /* Navegación dentro del encabezado */
 header nav ul {
     list-style: none; /* Elimina los puntos de lista predeterminados. */
@@ -127,8 +133,8 @@ form button {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgba(238, 251, 5, 0.927);
-    color: #1e3a8a;
+    background-color:  #1569aebc;
+    color: whitesmoke;
     border: none;
     font-weight: bold;
     transition: background 0.2s;
@@ -161,8 +167,8 @@ table th, table td {
 }
 
 table th {
-    background-color:rgba(238, 251, 5, 0.927);
-    color: #1569aebc;
+    background-color: #1569aebc;
+    color: whitesmoke;
 }
 
 /* Filas pares alternadas */
@@ -188,14 +194,15 @@ td button:hover {
 }
 
 .btn-edit {
-    background-color: burlywood;
+    background-color: #1569aebc;
+    color: whitesmoke;
 }
 .btn-edit:hover {
-    background-color: #f5d93b;
+    background-color:  #0099ff;
 }
 .btn-delete {
-    background-color: burlywood;
-    color: #ef4444;
+    background-color: #1569aebc;;
+    color: whitesmoke;
 }
 .btn-delete:hover {
     background-color: #dc2626;
