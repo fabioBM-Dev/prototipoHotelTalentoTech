@@ -2,7 +2,7 @@
 // Configuración base
 // ============================
 
-const API_URL = "http://localhost:3002/api/inventarios";
+const API_URL = ""https://3.16.215.161:4033/api/inventarios";
 
 // ============================
 // Validación de formulario
@@ -210,3 +210,4 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarInventarios();
 
 });
+
