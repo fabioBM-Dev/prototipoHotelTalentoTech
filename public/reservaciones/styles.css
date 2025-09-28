@@ -10,7 +10,7 @@
     flex-direction: column;
     min-height: 100vh;
 
-    background: url('../../images/background.jpg') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background: url('../../images/gal_restauranteMesa.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
     overflow-x: hidden; /* Previene el desplazamiento horizontal. */
 }
@@ -44,6 +44,12 @@ header h1 {
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
+}
+
+header h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-weight:600;
 }
 
 /* Navegación dentro del encabezado */
@@ -127,8 +133,8 @@ form button {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    background-color:#1569aedf;
-    color: burlywood;
+    background-color:  #1569aebc;
+    color: whitesmoke;
     border: none;
     font-weight: bold;
     transition: background 0.2s;
@@ -156,13 +162,13 @@ table {
 
 table th, table td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #e2e8f0;
 }
 
 table th {
-    background-color:#1569aedf ;
-    color: burlywood;
+    background-color: #1569aebc;
+    color: whitesmoke;
 }
 
 /* Filas pares alternadas */
@@ -188,14 +194,15 @@ td button:hover {
 }
 
 .btn-edit {
-    background-color: burlywood;
+    background-color: #1569aebc;
+    color: whitesmoke;
 }
 .btn-edit:hover {
-    background-color: #f5d93b;
+    background-color:  #0099ff;
 }
 .btn-delete {
-    background-color: burlywood;
-    color: #ef4444;
+    background-color: #1569aebc;;
+    color: whitesmoke;
 }
 .btn-delete:hover {
     background-color: #dc2626;
