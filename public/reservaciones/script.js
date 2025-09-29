@@ -3,7 +3,7 @@
 // ============================
 
 // URL de la API
-const API_URL = "https://18.216.175.230:4031/api/reservaciones";
+const API_URL = "https://underseahotel.ddns.net:4031/api/reservaciones";
 
 
 // ============================
@@ -242,6 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cargarReservaciones();
 
 });
+
 
 
 
