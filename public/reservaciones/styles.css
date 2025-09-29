@@ -10,7 +10,7 @@
     flex-direction: column;
     min-height: 100vh;
 
-    background: url('./gal_restauranteMesa.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background: url('./public/reservaciones/gal_restauranteMesa.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
     overflow-x: hidden; /* Previene el desplazamiento horizontal. */
 }
@@ -292,5 +292,6 @@ RESPONSIVE DESIGN
     }
     
 }
+
 
 
